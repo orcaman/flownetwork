@@ -1,4 +1,4 @@
-# flownetwork
+# flownetwork [![Circle CI](https://circleci.com/gh/streamrail/flownetwork.svg?style=svg)](https://circleci.com/gh/streamrail/flownetwork)
 Javascript implementation of flownetwork algorithms for finding max flow in a flow network
 
 

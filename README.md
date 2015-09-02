@@ -40,3 +40,7 @@ Javascript implementation of flownetwork algorithms for finding max flow in a fl
 	var flow = res.flow;
 	var cost = res.cost;
 ```
+
+## See it in action
+* [Use MaxFlow for wedding guests seating arrangements](https://github.com/streamrail/flownetwork/tree/master/examples/wedding)
+* [Use MaxFlowMinCost to find alternative routes](https://github.com/streamrail/flownetwork/tree/master/examples/routes)

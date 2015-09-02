@@ -2,7 +2,7 @@ var flownetwork = require("flownetwork");
 var createGraph = require("ngraph.graph");
 var createPixiGraphics = require('ngraph.pixi');
 
-window.buildGuestsNetwork = function(){
+function buildGuestsNetwork() {
 	n = new flownetwork();
 
 	// individuals
@@ -158,15 +158,15 @@ window.buildGuestsNetwork = function(){
 	return n;
 }
 
-window.computeFlow = function(n) {
+function computeFlow(n) {
 	return n.maxFlow('s', 't');
 }
 
-window.computeFlowWithCost = function(n) {
+function computeFlowWithCost(n) {
 	return n.maxFlowMinCost('s', 't');
 }
 
-window.convertNetworks = function (n) {
+function convertNetworks(n) {
 	var g = createGraph();
 	var vertices = Object.keys(n.edges);
 
@@ -182,7 +182,7 @@ window.convertNetworks = function (n) {
     return g;
 }
 
-window.displayNetwork = function(n) {
+function displayNetwork(n) {
 	var graph = convertNetworks(n);
 	// Create a pixi renderer:
 	var pixiGraphics = createPixiGraphics(graph, {

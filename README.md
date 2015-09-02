@@ -36,5 +36,7 @@ Javascript implementation of flownetwork algorithms for finding max flow in a fl
 	fn.addEdge('q','t',1, 1);
 
 	// find max flow
-	var max = fn.MFCUnitGraph('s','t');
+	var res = fn.MFCUnitGraph('s','t');
+	var flow = res.flow;
+	var cost = res.cost;
 ```

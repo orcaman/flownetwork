@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body { height: 100%; width: 100%; position: absolute; overflow: hidden; margin: 0; padding: 0;}
+	</style>
+	<script type="text/javascript" src="index.js"></script>	
+</head>
+<body>
+	<form>
+		<input type="button" value="alternative route" style="position: absolute; overflow: hidden;" onclick="ChangeRoute();">
+	</form>
+	<div id="divRoute" style="position: absolute; left:20px; top:50px; overflow: hidden; color: #ffffff;">
+		
+	</div>
+</body>
+
+<script type="text/javascript">
+	var n = buildNetwork();
+
+	var graph = displayNetwork(n);
+
+	var routes = getRoutes(n, 3);
+
+	function ChangeRoute() {
+		if(routes.length === 0) {
+			return;
+		}
+
+		route = routes.shift();
+		
+		displayRoute(route);
+		SetRoute(route);
+	}
+
+	function displayRoute(route)
+	{
+		var divRoute = document.getElementById('divRoute');
+		divRoute.innerText = "";
+
+		for(var i = 0; i < route.length - 1; i++) {
+			divRoute.innerText += route[i] + "\n";
+		}
+	}
+
+	function SetRoute(route) {
+		// clear graph.
+		graph.forEachLink(function(link){
+			link.data.flow = 0;
+		});
+
+		for(var i = 0; i < route.length-2; i++) {
+			var l = graph.getLink(route[i],route[i+1]);
+			l.data.flow = 1;
+		}
+	}
+
+</script>
+
+</html>

@@ -21,7 +21,7 @@ Javascript implementation of flownetwork algorithms for finding max flow in a fl
 	var max = fn.maxFlow('s','t');
 ```
 
-## find maximum flow with minimum cost in a unit network
+## find maximum flow with minimum cost in a unit graph
 
 ```javascript
 	// construct a network

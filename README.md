@@ -1,9 +1,9 @@
-# flownetwork [![Circle CI](https://circleci.com/gh/streamrail/flownetwork.svg?style=svg)](https://circleci.com/gh/streamrail/flownetwork)
+# Flownetwork [![Circle CI](https://circleci.com/gh/streamrail/flownetwork.svg?style=svg)](https://circleci.com/gh/streamrail/flownetwork)
 Javascript implementation of flownetwork algorithms for finding max flow in a flow network
 
 
 ## Usage
-## find maximum flow in a network
+## Find maximum flow in a network
 
 ```javascript
 	// construct a network
@@ -21,7 +21,7 @@ Javascript implementation of flownetwork algorithms for finding max flow in a fl
 	var max = fn.maxFlow('s','t');
 ```
 
-## find maximum flow with minimum cost in a unit graph
+## Find maximum flow with minimum cost in a unit graph
 
 ```javascript
 	// construct a network

@@ -1,6 +1,10 @@
 # Flownetwork [![Circle CI](https://circleci.com/gh/streamrail/flownetwork.svg?style=svg)](https://circleci.com/gh/streamrail/flownetwork)
 Javascript implementation of flownetwork algorithms for finding max flow in a flow network
 
+## Live Demos
+* [Use MaxFlow for wedding guests seating arrangements](http://streamrail.github.io/flownetwork/examples/wedding/)
+* [Use MaxFlowMinCost to find alternative routes](http://streamrail.github.io/flownetwork/examples/routes/)
+
 
 ## Usage
 ## Find maximum flow in a network
@@ -41,6 +45,9 @@ Javascript implementation of flownetwork algorithms for finding max flow in a fl
 	var cost = res.cost;
 ```
 
-## See it in action
+## Examples
 * [Use MaxFlow for wedding guests seating arrangements](https://github.com/streamrail/flownetwork/tree/master/examples/wedding)
 * [Use MaxFlowMinCost to find alternative routes](https://github.com/streamrail/flownetwork/tree/master/examples/routes)
+
+## License
+MIT (see license file)
